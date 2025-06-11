@@ -1,4 +1,5 @@
 <app-title nome="Produto 1"></app-title>
 <app-title nome="Produto 2"></app-title>
-<app-check-sample></app-check-sample>
-<app-card />
+<app-check-sample *ngIf="isAliveCheckedSample"></app-check-sample>
+<button (click)="disposeCheckSample()">Destruir</button>
+<!-- <app-card /> -->

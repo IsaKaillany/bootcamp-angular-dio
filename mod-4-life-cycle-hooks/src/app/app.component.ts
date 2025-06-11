@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     title = 'mod-4-life-cycle-hooks-angular';
+    isAliveCheckedSample: boolean = true;
+
+    disposeCheckSample() {
+        this.isAliveCheckedSample = false;
+    }
 }
