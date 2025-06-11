@@ -34,22 +34,28 @@ export class CheckSampleComponent
         this.quantidade -= 1;
     }
 
+    //checked -> content -> view
+
     ngOnInit(): void {
         console.log(`OnInit`);
     }
     ngDoCheck(): void {
         console.log(`DoCheck`);
     }
-    ngAfterContentChecked(): void {
-        console.log(`AfterContentChecked`);
-    }
+    // Inicia quando o primeiro conteudo é iniciado
     ngAfterContentInit(): void {
         console.log(`AfterContentInit`);
     }
-    ngAfterViewChecked(): void {
-        console.log(`AfterViewChecked`);
-    }
+    // Inicia depois da inicialização da view
     ngAfterViewInit(): void {
         console.log(`AfterViewInit`);
+    }
+    // Após alguma alteração, verifica o conteúdo
+    ngAfterContentChecked(): void {
+        console.log(`AfterContentChecked`);
+    }
+    // Após alguma alteração, verifica a view
+    ngAfterViewChecked(): void {
+        console.log(`AfterViewChecked`);
     }
 }
